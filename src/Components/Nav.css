@@ -3,7 +3,13 @@
     padding: 20px;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid black;    
+    border-bottom: 1px solid black;  
+    position: sticky;  
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('https://thumbs.dreamstime.com/z/table-top-computer-background-modern-portable-laptop-blank-screen-white-table-over-abstract-new-futuristic-technology-136105207.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
 }
 .navbar h3{
     color:red;
@@ -14,6 +20,7 @@
 }
 .navbar a{
     margin-right: 30px;
+    color: white;
     text-decoration: none;
     padding: 6px;
     cursor:pointer;

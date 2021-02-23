@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <nav className="navbar">
+        <nav className="navbar background">
             <h3>Education Place</h3>
             <div className="links">
                 {/* here we are going to use Route Links instead of anchor tag */}

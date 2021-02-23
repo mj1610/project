@@ -1,0 +1,11 @@
+.background1{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7) url('https://thumbs.dreamstime.com/z/table-top-computer-background-modern-portable-laptop-blank-screen-white-table-over-abstract-new-futuristic-technology-136105207.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.home{
+    text-align: left;
+    color: white;
+    padding: 20px;    
+}
