@@ -1,0 +1,26 @@
+.contact{
+    height: 100vh;
+    background: url('https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+input{
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px;
+}
+textarea{
+    border-radius: 4px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.query{
+    text-align: center;
+}
+
+@media only screen and (max-width: 249px){
+
+    input{
+        width: 100%;
+    }
+}

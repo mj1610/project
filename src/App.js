@@ -7,15 +7,25 @@ import Contact from './Components/Contact';
 import About from './Components/About';
 import LogIn from './Components/LogIn';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [burger,setBurger]=useState(false);
+  const [visibility, setVisibility] = useState(false);
+  
+  function handleBurger() {
+        setBurger(true);
+        setVisibility(true);
+        
+
+  }
   return (
     <Router>
     <div className="App">
-      <Nav/>
+      <Nav burger={burger} />
       <div className="content">
       <Switch>
-        <Route exact path='/home'>
+        <Route exact path='/'>
         <Home/>
         </Route>
         <Route path='/about'>

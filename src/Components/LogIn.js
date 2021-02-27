@@ -20,7 +20,7 @@ const LogIn = () => {
                 <br/>  
                 <label className="label">Gender: </label>
                 <select required>
-                    <option value="Select" selected required></option>
+                    <option defaultValue="Select" value="Select" required>Select</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Other">Other</option>
