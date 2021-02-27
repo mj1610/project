@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Nav from './Components/Nav';
 import Home from './Components/Home';
@@ -10,38 +9,39 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { useState } from 'react';
 
 function App() {
-  const [burger,setBurger]=useState(false);
+  const [burgernav,setBurgernav]=useState(false);
   const [visibility, setVisibility] = useState(false);
+  const [bur, setBur]= useState('navbar')
+  const [click, setClick] = useState(false);
+    const [dropdown,setDropdown] = useState(false);
+    const handleClick = () => setClick(!click);
   
-  function handleBurger() {
-        setBurger(true);
-        setVisibility(true);
-        
+      function burger() {
+        const link = document.getElementsByClassName("visibility");        
+          for(let item of link){ 
+            if(visibility==true){    
+              item.style.display= "block"
+              setVisibility(false)
+            }
+            else{
+              item.style.display= "none"
+            setVisibility(true)            
+            }
+          }
+      }
 
-  }
   return (
     <Router>
     <div className="App">
-      <Nav burger={burger} />
+      <Nav burger={burger} click={click} />
       <div className="content">
       <Switch>
-        <Route exact path='/'>
-        <Home/>
-        </Route>
-        <Route path='/about'>
-        <About/>
-        </Route>
-        <Route path='/contact'>
-        <Contact/>
-        </Route>
-        <Route path='/service'>
-        <Service/>
-        </Route>
-        <Route path='/login'>
-        <LogIn/>
-        </Route>
-      </Switch>
-      
+        <Route exact path='/'><Home/></Route>
+        <Route path='/about'><About/></Route>
+        <Route path='/contact'><Contact/></Route>
+        <Route path='/service'><Service/></Route>
+        <Route path='/login'><LogIn/></Route>
+      </Switch>      
       </div>
     </div>
     </Router>
