@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {Button} from './Button';
 import Dropdown from './Dropdown';
 
-const Nav = ({burger,click, Dropdown}) => {  
+const Nav = ({burger,click, dropdown}) => {  
     
     return (        
         <nav className="navbar">        
@@ -16,7 +16,7 @@ const Nav = ({burger,click, Dropdown}) => {
                 <Link to="/about">About</Link>    
                 <Link to="/contact">Contact</Link>
                 <Link to="/course">Course<i className="fas fa-caret-down"/></Link>
-                    {Dropdown && <Dropdown/>}
+                    {dropdown && <Dropdown/>}
                 <Link to="/service">Service</Link>
             </span>
             <span className="searchbox visibility">

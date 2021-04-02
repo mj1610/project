@@ -29,27 +29,27 @@ const Service = () => {
                     Redux
                 </div >
                 <div className="HTML">
-                    CSS
+                    .Net
                 </div>
                 <div className="HTML">
-                    JavaScript
+                    Java
                 </div>
                 <div className="HTML">
-                    REACT
+                    Redux
                 </div>
             </div>
             <div className="block">
                 <div className="HTML">
-                    HTML
+                    MongoDB
                 </div >
                 <div className="HTML">
-                    CSS
+                    NodeJS
                 </div>
                 <div className="HTML">
-                    JavaScript
+                    Express
                 </div>
                 <div className="HTML">
-                    REACT
+                    C#
                 </div>
             </div>
         </div>

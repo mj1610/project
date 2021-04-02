@@ -20,7 +20,7 @@ function App() {
         const link = document.getElementsByClassName("visibility");        
           for(let item of link){ 
             if(visibility==true){    
-              item.style.display= "block"
+              item.style.display= "contents"
               setVisibility(false)
             }
             else{
@@ -33,7 +33,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Nav burger={burger} click={click} />
+      <Nav burger={burger} click={click} dropdown={dropdown} />
       <div className="content">
       <Switch>
         <Route exact path='/'><Home/></Route>
